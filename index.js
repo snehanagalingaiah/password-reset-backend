@@ -14,7 +14,7 @@ const corsConfig = { origin:true, credentials: true}
 app.use(cors(corsConfig));
 app.options("*",cors());
 var allowCrossDomain = function(req,res,next) {
-  res.header('Access-Control-Allow-Origin', `${process.env.FRONTEND}`);
+  res.header('Access-Control-Allow-Origin', `https://64958d85b0250f246e9fa391--password-reset-auth.netlify.app/`);
   res.header('Access-Control-Allow-Methods', 'GET, PUT, POST, DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();  
